@@ -1,0 +1,12 @@
+{
+  "appName": "Jane’s Closet",
+  "tagline": "Shop the Latest Styles",
+  "currency": "₦",
+  "whatsapp": "08108179570",
+  "theme": {
+    "primary": "#ff85a1",
+    "secondary": "#ffb199",
+    "accent": "#d63384"
+  },
+  "developer": "Developed by Jane Emmanuel"
+}
