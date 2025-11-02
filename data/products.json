@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Floral Midi Dress",
+    "price": "8500",
+    "image": "assets/floral-dress.jpg",
+    "discount": "10%",
+    "soldOut": false
+  },
+  {
+    "name": "Classic White Sneakers",
+    "price": "12000",
+    "image": "assets/sneakers.jpg",
+    "soldOut": false
+  },
+  {
+    "name": "Coral Handbag",
+    "price": "9500",
+    "image": "assets/handbag.jpg",
+    "soldOut": false
+  }
+]
