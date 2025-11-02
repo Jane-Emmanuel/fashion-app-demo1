@@ -1,0 +1,126 @@
+/* ---------- GENERAL ---------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #ff85a1, #ffb199);
+  color: #333;
+}
+
+/* ---------- SPLASH ---------- */
+#splash {
+  position: fixed;
+  inset: 0;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeOut 1.8s ease-in-out 1.2s forwards;
+}
+
+.logo-bag {
+  width: 80px;
+  height: 80px;
+  background: url('icons/shopping-bag.svg') no-repeat center/contain;
+  animation: pop 1s ease;
+}
+
+.splash-text {
+  font-size: 24px;
+  color: #d63384;
+  margin-top: 10px;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.6); opacity: 0; }
+  60% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeOut {
+  to { opacity: 0; visibility: hidden; }
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  text-align: center;
+  padding: 40px 10px 20px;
+  color: white;
+}
+
+.header h1 {
+  font-size: 2.2em;
+  margin: 0;
+}
+
+.tagline {
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+/* ---------- PRODUCTS ---------- */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.25s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-details {
+  padding: 12px;
+}
+
+.product-details h3 {
+  font-size: 1.1em;
+  margin: 0 0 6px;
+  color: #d63384;
+}
+
+.price {
+  font-weight: bold;
+  color: #ff4f81;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.buy-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff4f81, #ff758c);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 24px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.buy-btn:hover {
+  background: linear-gradient(135deg, #ff758c, #ff4f81);
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9em;
+  color: #fff;
+  opacity: 0.85;
+}
