@@ -1,0 +1,6 @@
+{
+  "version": "1.0.0",
+  "lastUpdate": "2025-11-01",
+  "description": "Auto-updating Fashion PWA built for Jane’s Closet.",
+  "updateNotes": "Initial launch version with splash screen, product grid, and WhatsApp order link."
+}
